@@ -59,15 +59,5 @@ namespace Fujitsu_Form_App.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap キャプチャ {
-            get {
-                object obj = ResourceManager.GetObject("キャプチャ", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
