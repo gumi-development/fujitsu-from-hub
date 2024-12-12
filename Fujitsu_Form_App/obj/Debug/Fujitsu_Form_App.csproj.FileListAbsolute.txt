@@ -2,9 +2,9 @@ D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\bin\Debug\Fuji
 D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\bin\Debug\Fujitsu_Form_App.exe
 D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\bin\Debug\Fujitsu_Form_App.pdb
 D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\obj\Debug\Fujitsu_Form_App.csproj.AssemblyReference.cache
-D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\obj\Debug\Fujitsu_Form_App.Form1.resources
 D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\obj\Debug\Fujitsu_Form_App.Properties.Resources.resources
 D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\obj\Debug\Fujitsu_Form_App.csproj.GenerateResource.cache
 D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\obj\Debug\Fujitsu_Form_App.csproj.CoreCompileInputs.cache
 D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\obj\Debug\Fujitsu_Form_App.exe
 D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\obj\Debug\Fujitsu_Form_App.pdb
+D:\Ishida\works\Fujitsu_batForm\Fujitsu_Form_App\Fujitsu_Form_App\obj\Debug\Fujitsu_Form_App.startUp.resources

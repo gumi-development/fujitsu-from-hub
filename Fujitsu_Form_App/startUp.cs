@@ -2,14 +2,18 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
+
 
 namespace Fujitsu_Form_App
 {
-    public partial class Form1 : Form
+    public partial class startUp : Form
     {
         private static readonly HttpClient client = new HttpClient();
         private bool isSending = false;
-        public Form1()
+        private readonly string wj_path = @"C:/shortCuts/start_wj.lnk";
+        private readonly string mtg_path = @"C:/shortCuts/start_mtg.lnk";
+        public startUp()
         {
             InitializeComponent();
         }
@@ -23,8 +27,10 @@ namespace Fujitsu_Form_App
             try
             {
                 button_Mtg.Enabled = false;
-                string url = "http://192.168.12.126:10001/wayFinding";
+                string url = "http://192.168.0.102:10001/wayFinding";
                 await SendGetRequestAsync(url);
+                await StartProcessAsync(wj_path);
+                this.Close();
             }
             catch
             {
@@ -43,8 +49,10 @@ namespace Fujitsu_Form_App
             try
             {
                 button_Wj.Enabled = false;
-                string url = "http://192.168.12.126:10001/mtg";
+                string url = "http://192.168.0.102:10001/mtg";
                 await SendGetRequestAsync(url);
+                await StartProcessAsync(mtg_path);
+                this.Close();
             }
             catch
             {
@@ -63,7 +71,6 @@ namespace Fujitsu_Form_App
                 if (response.IsSuccessStatusCode)
                 {
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    this.Close();
                 }
                 else
                 {
@@ -74,6 +81,12 @@ namespace Fujitsu_Form_App
             {
                 throw ex;
             }
+        }
+
+        static async Task StartProcessAsync(string lnkFilePath) 
+        {
+            ProcessStartInfo psi = new ProcessStartInfo { FileName = lnkFilePath, UseShellExecute = true }; 
+            await Task.Run(() => Process.Start(psi)); 
         }
 
         private void label1_Click(object sender, EventArgs e)
